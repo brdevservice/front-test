@@ -15,6 +15,27 @@ export default class Functions {
         xml.open("GET", url_file, true);
         xml.send();
     
-    }  
+    }
+
+    modal(action, el) {
+
+        switch(action) {
+
+            case 'show':
+                el.className += " modal-show";
+                document.body.style.overflowY = 'hidden';
+                break;
+            
+            case 'hide':
+                el.className = "modal";
+                document.body.style.overflowY = 'auto';
+                break;
+            
+            default:
+                break;
+
+        }
+
+    }
 
 }
