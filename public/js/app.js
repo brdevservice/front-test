@@ -18,6 +18,24 @@ document.addEventListener("DOMContentLoaded", () => {
         home.addEventListener('click', () => {
         
             functions.load_file('./pages/home.html', page_container)
+
+            setTimeout(() => {
+
+                let btn_contact = document.getElementById('btn-contact');
+                let btn_close_contact = document.getElementById('btn-close-contact');
+                let modal_contact = document.getElementById('modal-contact');
+                btn_contact.addEventListener('click', function() {
+
+                    functions.modal('show', modal_contact)
+
+                })
+                btn_close_contact.addEventListener('click', function() {
+
+                    functions.modal('hide', modal_contact)
+
+                })
+
+            }, 200)
         
         })
         
