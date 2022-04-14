@@ -1,0 +1,146 @@
+header {
+
+    nav {
+
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        padding: 1rem 2rem;
+        position: fixed;
+        top: 0;
+        max-width: 1366px;
+        width: 100%;
+
+        .mobile-btn {
+
+            display: none;
+
+        }
+
+        .brand {
+
+            align-items: center;
+            display: flex;
+
+        }
+    
+        ul {
+    
+            align-items: center;
+            display: flex;
+            gap: 20px;
+    
+            
+            a {
+    
+                color: $primary-color;
+                padding: 1rem 2rem;
+                font-size: text-size(.5);
+                
+    
+                &:hover {
+    
+                    cursor: pointer;
+                    text-decoration: underline;
+    
+                }
+    
+            }
+
+            .dropdown {
+
+                display: block;
+
+            }
+    
+        }
+
+        .dropdown {
+
+            display: none;
+
+        }
+
+        button {
+    
+            @include btn(transparent, $primary-color);
+            color: $primary-color;
+            font-size: text-size(.5);
+
+            &:hover {
+
+                @include btn($primary-color, $primary-color);
+                color: $font-color;
+                cursor: pointer;
+
+            }
+
+        }
+    
+    }
+
+    > div {
+
+        background-color: rgb(27, 26, 26);
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        color: white;
+        height: 0px;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transition: all .5s ease-in-out;
+        top: 86px;
+        width: 100%;
+
+        ul {
+
+            li {
+
+                padding: .75rem .5rem;
+
+                a {
+
+                    text-transform: uppercase;
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+
+        nav {
+
+            padding: 1rem;
+
+            .mobile-btn {
+
+                display: block;
+
+            }
+
+            ul {
+
+                display: none;
+
+            }
+
+            .dropdown {
+
+                display: block;
+
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,57 @@
+.btn {
+
+    border-radius: 6px;
+    font-weight: 600;
+
+    &:hover {
+
+        color: white;
+        cursor: pointer;
+
+    }
+
+}
+
+.btn-danger {
+
+    @include btn($danger, $primary-color);
+    color: white;
+    font-size: text-size(.5);
+
+    &:hover {
+
+        background-color: rgb(133, 44, 37);
+
+    }
+
+}
+
+.btn-success {
+
+    @include btn($success, $primary-color);
+    color: white;
+    font-size: text-size(.5);
+
+    &:hover {
+
+        background-color: rgb(26, 138, 39);
+
+    }
+
+}
+
+.btn-white {
+
+    @include btn(transparent, $primary-color);
+    color: $primary-color;
+    font-size: text-size(.5);
+
+    &:hover {
+
+        @include btn($primary-color, $primary-color);
+        color: $font-color;
+        cursor: pointer;
+
+    }
+
+}

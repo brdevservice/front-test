@@ -1,0 +1,33 @@
+.accord-container {
+
+    margin: calc-mar(.75) auto;
+
+}
+
+.accord-title {
+
+    border-radius: 6px;
+    color: black;
+    text-decoration: none;
+    font-size: text-size(.5);
+    font-weight: bolder;
+    padding: .4rem .75rem;
+    z-index: 9999999;
+
+}
+
+.accord-content {
+
+    height: 0;
+    transition: all 1s ease-in-out;
+    opacity: 0;
+
+}
+
+.show {
+
+    display: block;
+    height: min(120px, 200px);
+    opacity: 1;
+
+}

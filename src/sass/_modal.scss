@@ -1,0 +1,43 @@
+.modal {
+
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+
+}
+
+.modal .modal-content {
+
+    background: white;
+    border-radius: 1rem;
+    color: $font-color;
+    width: 40%;
+
+}
+
+.modal .modal-title, .modal .modal-body {
+
+    padding: 1.5rem;
+
+}
+
+.modal-show {
+
+    display: flex !important;
+
+}
+
+@media (max-width: 768px) {
+
+    .modal-content {
+
+        width: 85% !important;
+
+    }
+
+}

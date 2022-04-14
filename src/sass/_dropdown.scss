@@ -1,0 +1,49 @@
+.dropdown {
+
+    position: relative;
+
+    &:hover > .dropdown-container {
+
+        display: block;
+
+    }
+
+    .dropdown-container {
+
+        background-color: $primary-color;
+        border-radius: 6px;
+        display: none;
+        position: absolute;
+        right: 20%;
+        z-index: 999999;
+
+        .dropdown-item {
+
+            border-bottom: 1px solid black;
+            padding: .5rem .75rem;
+            text-align: justify;
+
+            &:hover > a {
+
+                text-decoration: underline;
+
+            }
+
+            &:last-child {
+
+                border-bottom: none;
+
+            }
+
+            a {
+
+                color: $font-color;
+                text-decoration: none;
+
+            }
+
+        }
+
+    }
+
+}
