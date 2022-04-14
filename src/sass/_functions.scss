@@ -1,0 +1,26 @@
+$unit-title: 3rem;
+@function titles($val) {
+
+    @return $unit-title - $val;
+
+}
+
+$unit-text: 1.5rem;
+@function text-size($val) {
+
+    @return $unit-text - $val;
+
+}
+
+@function calc-col($val) {
+
+    @return ($val * 100%) / 12;
+
+}
+
+$unit-margin: 2.5rem;
+@function calc-mar($val) {
+
+    @return $unit-margin - $val;
+
+}

@@ -1,0 +1,21 @@
+@mixin reset-pad-mar {
+    
+    margin: 0;
+    padding: 0;
+
+}
+
+@mixin btn($bg, $border-color) {
+
+    background-color: $bg;
+    border: $btn-border;
+    border-color: $border-color;
+    border-radius: 4px;
+    padding: 9px 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition-duration: 1000ms;
+
+}

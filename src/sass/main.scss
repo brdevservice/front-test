@@ -1,0 +1,126 @@
+@import './root';
+@import './functions';
+@import './mixins';
+@import './header';
+@import './containers';
+@import './grid';
+@import './border';
+@import './spacing';
+@import './align';
+@import './displays';
+@import './forms';
+@import './modal';
+@import './btn.scss';
+@import './accord';
+@import './dropdown';
+
+
+* {
+
+    box-sizing: $box-sizing;
+    line-height: $line-height;
+    @include reset-pad-mar();
+
+}
+
+body {
+
+    background-color: rgb(224, 218, 218);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+
+        background-color: transparent;
+        width: 10px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+
+        background-color: rgb(126, 121, 121);
+
+    }
+
+}
+
+main {
+
+    background-color: $primary-color;
+    box-shadow: 2px 2px 6px 8px rgba(213, 197, 197, .6);
+    margin: auto;
+    max-width: 1366px;
+
+}
+
+a {
+
+    font-weight: $link-weight;
+
+}
+
+h1 {
+
+    font-size: titles(0) !important;
+    font-weight: bolder;
+
+}
+
+h2 {
+
+    font-size: titles(0.25) !important;
+    font-weight: bolder;
+
+}
+
+ul {
+
+    list-style: none;
+    @include reset-pad-mar();
+
+}
+
+p {
+
+    text-align: justify;
+
+}
+
+footer {
+
+    background-color: rgb(27, 26, 26);
+    color: white;
+    padding: 1.5rem 2rem;
+    width: 100%;
+
+    strong {
+
+        display: block;
+        padding: .5rem .2rem;
+
+    }
+
+    a {
+
+        color: white;
+        font-size: 1.5rem;
+
+    }
+
+}
+
+
+.img-fluid {
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.bg-gray {
+
+    background-color: $gray;
+    color: $primary-color !important;
+
+}
